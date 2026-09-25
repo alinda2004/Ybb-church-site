@@ -1,0 +1,32 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #fdfaf6; color: #2d2a26; line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+header { background: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 10; }
+header .container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+.logo { font-weight: 700; letter-spacing: 2px; color: #8b5e34; }
+nav ul { list-style: none; display: flex; gap: 25px; }
+nav a { text-decoration: none; color: #2d2a26; font-weight: 600; transition: color 0.3s; }
+nav a:hover { color: #c38d5f; }
+
+.hero { background: linear-gradient(135deg, #f7e7d0, #f9f3ec); padding: 100px 0; text-align: center; }
+.hero h2 { font-size: 2.8rem; margin-bottom: 15px; color: #5a3e2b; }
+.hero p { max-width: 600px; margin: 0 auto 25px; font-size: 1.1rem; }
+.btn { display: inline-block; background: #8b5e34; color: white; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+.btn:hover { background: #5a3e2b; }
+
+.about, .events { padding: 70px 0; text-align: center; }
+.about h3, .events h3 { font-size: 2rem; margin-bottom: 20px; color: #5a3e2b; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
+.card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); text-align: left; }
+.card h4 { color: #8b5e34; margin-bottom: 10px; }
+.card span { display: inline-block; margin-top: 12px; background: #f7e7d0; color: #8b5e34; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+
+footer { background: #2d2a26; color: #e8ddd1; padding: 30px 0; text-align: center; font-size: 0.9rem; }
+
+@media (max-width: 768px) {
+    header .container { flex-direction: column; height: auto; padding: 15px 0; }
+    nav ul { gap: 15px; margin-top: 10px; }
+    .hero h2 { font-size: 2rem; }
+                       }
